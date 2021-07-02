@@ -4,12 +4,9 @@ name: Build_x86
 on: 
   release:
     types: [published]
-
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout
       uses: actions/checkout@master
