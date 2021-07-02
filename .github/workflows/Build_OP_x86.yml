@@ -74,7 +74,6 @@ jobs:
       working-directory: ./openwrt
       run: |
         git clone https://github.com/xiaorouji/openwrt-passwall.git package/lienol
-        git clone https://github.com/benwjr/package/AutoBuild-OpenWrt
     - name: Configuration Customization - Build_x86
       env:
         CONFIG_FILE: 'x86.config'
