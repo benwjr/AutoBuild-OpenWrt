@@ -40,6 +40,7 @@ jobs:
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --global user.name "github-actions[bot]"
         git config pull.rebase true
+        git rebase --skip
         
     - name: Start Syncing Autobuild Most Updated Changes
       run: git pull https://github.com/esirplayground/AutoBuild-OpenWrt.git --log --no-commit
